@@ -29,35 +29,35 @@ namespace laba_3
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.nums1a = new System.Windows.Forms.TextBox();
+            this.nums1b = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.nums2b = new System.Windows.Forms.TextBox();
+            this.nums2a = new System.Windows.Forms.TextBox();
+            this.result = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // nums1a
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(45, 20);
-            this.textBox1.TabIndex = 0;
+            this.nums1a.Location = new System.Drawing.Point(15, 88);
+            this.nums1a.Name = "nums1a";
+            this.nums1a.Size = new System.Drawing.Size(45, 20);
+            this.nums1a.TabIndex = 0;
             // 
-            // textBox2
+            // nums1b
             // 
-            this.textBox2.Location = new System.Drawing.Point(85, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(45, 20);
-            this.textBox2.TabIndex = 1;
+            this.nums1b.Location = new System.Drawing.Point(85, 88);
+            this.nums1b.Name = "nums1b";
+            this.nums1b.Size = new System.Drawing.Size(45, 20);
+            this.nums1b.TabIndex = 1;
             // 
             // label1
             // 
@@ -115,27 +115,27 @@ namespace laba_3
             this.label6.TabIndex = 8;
             this.label6.Text = "+";
             // 
-            // textBox3
+            // nums2b
             // 
-            this.textBox3.Location = new System.Drawing.Point(85, 142);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(45, 20);
-            this.textBox3.TabIndex = 7;
+            this.nums2b.Location = new System.Drawing.Point(85, 142);
+            this.nums2b.Name = "nums2b";
+            this.nums2b.Size = new System.Drawing.Size(45, 20);
+            this.nums2b.TabIndex = 7;
             // 
-            // textBox4
+            // nums2a
             // 
-            this.textBox4.Location = new System.Drawing.Point(15, 142);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(45, 20);
-            this.textBox4.TabIndex = 6;
+            this.nums2a.Location = new System.Drawing.Point(15, 142);
+            this.nums2a.Name = "nums2a";
+            this.nums2a.Size = new System.Drawing.Size(45, 20);
+            this.nums2a.TabIndex = 6;
             // 
-            // textBox5
+            // result
             // 
-            this.textBox5.Location = new System.Drawing.Point(15, 193);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(174, 20);
-            this.textBox5.TabIndex = 10;
+            this.result.Location = new System.Drawing.Point(15, 193);
+            this.result.Name = "result";
+            this.result.ReadOnly = true;
+            this.result.Size = new System.Drawing.Size(174, 20);
+            this.result.TabIndex = 10;
             // 
             // label7
             // 
@@ -181,17 +181,17 @@ namespace laba_3
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.result);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.nums2b);
+            this.Controls.Add(this.nums2a);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nums1b);
+            this.Controls.Add(this.nums1a);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -204,17 +204,17 @@ namespace laba_3
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox nums1a;
+        private System.Windows.Forms.TextBox nums1b;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox nums2b;
+        private System.Windows.Forms.TextBox nums2a;
+        private System.Windows.Forms.TextBox result;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label8;
