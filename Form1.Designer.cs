@@ -59,6 +59,7 @@ namespace laba_3
             this.nums1b.Name = "nums1b";
             this.nums1b.Size = new System.Drawing.Size(45, 20);
             this.nums1b.TabIndex = 1;
+            this.nums1b.TextChanged += new System.EventHandler(this.nums1b_TextChanged);
             // 
             // label1
             // 
@@ -122,6 +123,7 @@ namespace laba_3
             this.nums2b.Name = "nums2b";
             this.nums2b.Size = new System.Drawing.Size(45, 20);
             this.nums2b.TabIndex = 7;
+            this.nums2b.TextChanged += new System.EventHandler(this.nums2b_TextChanged);
             // 
             // nums2a
             // 
@@ -129,6 +131,7 @@ namespace laba_3
             this.nums2a.Name = "nums2a";
             this.nums2a.Size = new System.Drawing.Size(45, 20);
             this.nums2a.TabIndex = 6;
+            this.nums2a.TextChanged += new System.EventHandler(this.nums2a_TextChanged);
             // 
             // result
             // 
@@ -162,6 +165,7 @@ namespace laba_3
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(174, 21);
             this.comboBox1.TabIndex = 13;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label8
             // 
