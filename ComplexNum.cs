@@ -10,49 +10,50 @@ public class ComplexNum
 		this.b = b;
 	}
 
+	private string getResult(double a, double b)
+    {
+		string result = "";
+		if (b > 0 && a != 0)
+		{
+			result = $"{a}+{b}i";
+		}
+		else if (b < 0 && a != 0)
+		{
+			result = $"{a}{b}i";
+		}
+		else if (b == 0)
+		{
+			result = $"{a}";
+		}
+		else if (a == 0)
+		{
+			result = $"{b}i";
+		}
+		return result;
+	}
+
 	public string sum(ComplexNum first, ComplexNum second)
     {
 		double sum_a = first.a + second.a;
 		double sum_b = first.b + second.b;
-		string result = "";
-		if (sum_b > 0 && sum_a!=0)
-		{
-		    result = $"{sum_a}+{sum_b}i";
-		}
-		else if (sum_b<0 && sum_a != 0)
-        {
-			result = $"{sum_a}{sum_b}i";
-		}
-		else if (sum_b==0)
-        {
-		    result = $"{sum_a}";
-		}
-		else if (sum_a==0)
-        {
-			result = $"{sum_b}i";
-		}
+		string result = getResult(sum_a,sum_b);
 		return result;
     }
 	public string minus(ComplexNum first, ComplexNum second)
 	{
 		double minus_a = first.a - second.a;
 		double minus_b = first.b - second.b;
+		string result = getResult(minus_a,minus_b);
+		return result;
+	}
+	public string delenie(ComplexNum first, ComplexNum second)
+	{
 		string result = "";
-		if (minus_b > 0 && minus_a != 0)
+		if ((second.a * second.a + second.b * second.b) != 0)
 		{
-			result = $"{minus_a}+{minus_b}i";
-		}
-		else if (minus_b < 0 && minus_a != 0)
-		{
-			result = $"{minus_a}{minus_b}i";
-		}
-		else if (minus_b == 0)
-		{
-			result = $"{minus_a}";
-		}
-		else if (minus_a == 0)
-		{
-			result = $"{minus_b}i";
+			double delenie1 = (first.a * second.a + first.b * second.b) / (second.a * second.a + second.b * second.b);
+			double delenie2 = (first.b * second.a - first.a * second.b) / (second.a * second.a + second.b * second.b);
+			result = getResult(delenie1, delenie2);
 		}
 		return result;
 	}
