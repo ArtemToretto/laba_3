@@ -160,7 +160,7 @@ namespace laba_3
             "Вычитание",
             "Умножение",
             "Деление",
-            "Сравнение"});
+            "Сравнение векторов"});
             this.comboBox1.Location = new System.Drawing.Point(15, 34);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(174, 21);

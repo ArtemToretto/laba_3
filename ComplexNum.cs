@@ -88,7 +88,7 @@ public class ComplexNum
 		}
 		else if (vect1 == vect2)
         {
-			result = "Комплексные числа равны.";
+			result = "Вектора равны.";
 		}
 		return result;
 	}

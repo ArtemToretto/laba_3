@@ -58,7 +58,7 @@ namespace laba_3
                     case "Деление":
                         result.Text=first.delenie(first,second);
                         break;
-                    case "Сравнение":
+                    case "Сравнение векторов":
                         result.Text = first.sravnenie(first, second);
                         break;
                     default:
