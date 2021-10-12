@@ -58,6 +58,9 @@ namespace laba_3
                     case "Деление":
                         result.Text=first.delenie(first,second);
                         break;
+                    case "Сравнение":
+                        result.Text = first.sravnenie(first, second);
+                        break;
                     default:
                         result.Text = "Выберите действие.";
                         break;
