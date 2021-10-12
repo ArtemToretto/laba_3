@@ -51,6 +51,7 @@ namespace laba_3
             this.nums1a.Name = "nums1a";
             this.nums1a.Size = new System.Drawing.Size(45, 20);
             this.nums1a.TabIndex = 0;
+            this.nums1a.TextChanged += new System.EventHandler(this.nums1a_TextChanged);
             // 
             // nums1b
             // 

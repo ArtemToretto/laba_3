@@ -26,5 +26,13 @@ namespace laba_3
         {
 
         }
+
+        private void nums1a_TextChanged(object sender, EventArgs e)
+        {
+            if (nums2a.Text!=string.Empty && nums2b.Text != string.Empty && nums1b.Text != string.Empty)
+            {
+
+            }
+        }
     }
 }
