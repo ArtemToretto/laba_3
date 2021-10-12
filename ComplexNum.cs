@@ -39,6 +39,7 @@ public class ComplexNum
 		string result = getResult(sum_a,sum_b);
 		return result;
     }
+
 	public string minus(ComplexNum first, ComplexNum second)
 	{
 		double minus_a = first.a - second.a;
@@ -46,6 +47,16 @@ public class ComplexNum
 		string result = getResult(minus_a,minus_b);
 		return result;
 	}
+
+	public string ymnojenie(ComplexNum first, ComplexNum second)
+	{
+		string result = "";
+			double ymn1 = first.a * second.a - first.b * second.b;
+			double ymn2 = first.a * second.b + second.a * first.b;
+			result = getResult(ymn1, ymn2);
+		return result;
+	}
+
 	public string delenie(ComplexNum first, ComplexNum second)
 	{
 		string result = "";
@@ -55,6 +66,9 @@ public class ComplexNum
 			double delenie2 = (first.b * second.a - first.a * second.b) / (second.a * second.a + second.b * second.b);
 			result = getResult(delenie1, delenie2);
 		}
+		else
+        {
+			result="Знаминатель равен 0"
+        }
 		return result;
 	}
-}

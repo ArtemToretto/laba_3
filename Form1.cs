@@ -53,7 +53,10 @@ namespace laba_3
                         result.Text = first.minus(first, second);
                         break;
                     case "Умножение":
-                        //result.Text =;
+                        result.Text =first.ymnojenie(first,second);
+                        break;
+                    case "Деление":
+                        result.Text=first.delenie(first,second);
                         break;
                     default:
                         result.Text = "Выберите действие.";
