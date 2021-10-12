@@ -25,7 +25,7 @@ public class ComplexNum
 		}
 		else if (sum_b==0)
         {
-		    result = $"{sum_a};
+		    result = $"{sum_a}";
 		}
 		else if (sum_a==0)
         {
