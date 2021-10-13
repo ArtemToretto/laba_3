@@ -20,7 +20,10 @@ namespace laba_3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            nums1a.Text = Properties.Settings.Default.a1;
+            nums1b.Text = Properties.Settings.Default.b1;
+            nums2a.Text = Properties.Settings.Default.a2;
+            nums2b.Text = Properties.Settings.Default.b2;
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -58,7 +61,7 @@ namespace laba_3
                     case "Деление":
                         result.Text=first.delenie(first,second);
                         break;
-                    case "Сравнение векторов":
+                    case "Сравнение":
                         result.Text = first.sravnenie(first, second);
                         break;
                     default:
@@ -70,6 +73,11 @@ namespace laba_3
                 {
                  result.Text = "Некорректные значения.";
                 }
+            Properties.Settings.Default.a1 = nums1a.Text;
+            Properties.Settings.Default.a2 = nums2a.Text;
+            Properties.Settings.Default.b1 = nums1b.Text;
+            Properties.Settings.Default.b2 = nums2b.Text;
+            Properties.Settings.Default.Save();
         }
 
         private void nums1b_TextChanged(object sender, EventArgs e)
