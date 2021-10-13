@@ -25,10 +25,10 @@ namespace laba_3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string a1 {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double a1 {
             get {
-                return ((string)(this["a1"]));
+                return ((double)(this["a1"]));
             }
             set {
                 this["a1"] = value;
@@ -37,10 +37,10 @@ namespace laba_3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string b1 {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double b1 {
             get {
-                return ((string)(this["b1"]));
+                return ((double)(this["b1"]));
             }
             set {
                 this["b1"] = value;
@@ -49,10 +49,10 @@ namespace laba_3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string a2 {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double a2 {
             get {
-                return ((string)(this["a2"]));
+                return ((double)(this["a2"]));
             }
             set {
                 this["a2"] = value;
@@ -61,10 +61,10 @@ namespace laba_3.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string b2 {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double b2 {
             get {
-                return ((string)(this["b2"]));
+                return ((double)(this["b2"]));
             }
             set {
                 this["b2"] = value;

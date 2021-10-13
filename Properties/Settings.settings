@@ -2,17 +2,17 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="laba_3.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="a1" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="a1" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="b1" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="b1" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="a2" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="a2" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="b2" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="b2" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -16,14 +16,15 @@ namespace laba_3
         public Form1()
         {
             InitializeComponent();
+            nums1a.Text = Properties.Settings.Default.a1.ToString();
+            nums1b.Text = Properties.Settings.Default.b1.ToString();
+            nums2a.Text = Properties.Settings.Default.a2.ToString();
+            nums2b.Text = Properties.Settings.Default.b2.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            nums1a.Text = Properties.Settings.Default.a1;
-            nums1b.Text = Properties.Settings.Default.b1;
-            nums2a.Text = Properties.Settings.Default.a2;
-            nums2b.Text = Properties.Settings.Default.b2;
+
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -45,6 +46,11 @@ namespace laba_3
                 double b1 = double.Parse(nums1b.Text);
                 double a2 = double.Parse(nums2a.Text);
                 double b2 = double.Parse(nums2b.Text);
+                Properties.Settings.Default.a1 = a1;
+                Properties.Settings.Default.a2 = a2;
+                Properties.Settings.Default.b1 = b1;
+                Properties.Settings.Default.b2 = b2;
+                Properties.Settings.Default.Save();
                 ComplexNum first = new ComplexNum(a1, b1);
                 ComplexNum second = new ComplexNum(a2, b2);
                 switch (comboBox1.SelectedItem)
@@ -73,11 +79,6 @@ namespace laba_3
                 {
                  result.Text = "Некорректные значения.";
                 }
-            Properties.Settings.Default.a1 = nums1a.Text;
-            Properties.Settings.Default.a2 = nums2a.Text;
-            Properties.Settings.Default.b1 = nums1b.Text;
-            Properties.Settings.Default.b2 = nums2b.Text;
-            Properties.Settings.Default.Save();
         }
 
         private void nums1b_TextChanged(object sender, EventArgs e)
