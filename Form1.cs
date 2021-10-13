@@ -39,9 +39,27 @@ namespace laba_3
 
         private void Calculate()
         {
-                double n = 0;
-                if (double.TryParse(nums1a.Text, out n) && double.TryParse(nums2b.Text, out n) && double.TryParse(nums2a.Text, out n) && double.TryParse(nums1b.Text, out n))
+            bool isCorrect = true;
+            foreach(var ctl in this.Controls)
+            {
+                if (ctl is TextBox)
                 {
+                    if (ctl == result)
+                    {
+                        continue;
+                    }
+
+                    double n = 0;
+                    var txtBox = ctl as TextBox;
+                    if (!double.TryParse(txtBox.Text, out n))
+                    {
+                        isCorrect = false;
+                        break;
+                    }
+                }
+            }
+            if (isCorrect)
+            {
                 double a1 = double.Parse(nums1a.Text);
                 double b1 = double.Parse(nums1b.Text);
                 double a2 = double.Parse(nums2a.Text);
@@ -54,31 +72,31 @@ namespace laba_3
                 ComplexNum first = new ComplexNum(a1, b1);
                 ComplexNum second = new ComplexNum(a2, b2);
                 switch (comboBox1.SelectedItem)
-                    {
+                {
                     case "Сложение":
-                        result.Text = first.sum(first, second);
+                        result.Text = (first + second).ToString();
                         break;
                     case "Вычитание":
-                        result.Text = first.minus(first, second);
+                        result.Text = (first - second).ToString();
                         break;
                     case "Умножение":
-                        result.Text =first.ymnojenie(first,second);
+                        result.Text = (first * second).ToString();
                         break;
                     case "Деление":
-                        result.Text=first.delenie(first,second);
+                        result.Text = (first / second).ToString();
                         break;
                     case "Сравнение":
-                        result.Text = first.sravnenie(first, second);
+                        result.Text = first.Comparison(first, second);
                         break;
                     default:
                         result.Text = "Выберите действие.";
                         break;
                 }
-                }
-                else
-                {
-                 result.Text = "Некорректные значения.";
-                }
+            }
+            else
+            {
+                result.Text = "Некорректные значения.";
+           }
         }
 
         private void nums1b_TextChanged(object sender, EventArgs e)

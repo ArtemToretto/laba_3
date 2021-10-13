@@ -10,7 +10,12 @@ public class ComplexNum
 		this.b = b;
 	}
 
-	private string getResult(double a, double b)
+    public override string ToString()
+    {
+		return this.getResult(a, b);
+    }
+
+    private string getResult(double a, double b)
 	{
 		string result = "";
 		if (b > 0 && a != 0)
@@ -32,48 +37,45 @@ public class ComplexNum
 		return result;
 	}
 
-	public string sum(ComplexNum first, ComplexNum second)
+
+	public static ComplexNum operator+(ComplexNum first, ComplexNum second)
 	{
 		double sum_a = first.a + second.a;
 		double sum_b = first.b + second.b;
-		string result = getResult(sum_a, sum_b);
-		return result;
+		ComplexNum third = new ComplexNum(sum_a, sum_b);
+		return third;
 	}
 
-	public string minus(ComplexNum first, ComplexNum second)
+	public static ComplexNum operator-(ComplexNum first, ComplexNum second)
 	{
 		double minus_a = first.a - second.a;
 		double minus_b = first.b - second.b;
-		string result = getResult(minus_a, minus_b);
-		return result;
+		ComplexNum third = new ComplexNum(minus_a, minus_b);
+		return third;
 	}
 
-	public string ymnojenie(ComplexNum first, ComplexNum second)
+	public static ComplexNum operator*(ComplexNum first, ComplexNum second)
 	{
-		string result = "";
 		double ymn1 = first.a * second.a - first.b * second.b;
 		double ymn2 = first.a * second.b + second.a * first.b;
-		result = getResult(ymn1, ymn2);
-		return result;
+		ComplexNum third = new ComplexNum(ymn1, ymn2);
+		return third;
 	}
 
-	public string delenie(ComplexNum first, ComplexNum second)
+	public static ComplexNum operator/(ComplexNum first, ComplexNum second)
 	{
-		string result = "";
+		ComplexNum third = new ComplexNum(0, 0);
 		if ((second.a * second.a + second.b * second.b) != 0)
 		{
 			double delenie1 = (first.a * second.a + first.b * second.b) / (second.a * second.a + second.b * second.b);
 			double delenie2 = (first.b * second.a - first.a * second.b) / (second.a * second.a + second.b * second.b);
-			result = getResult(delenie1, delenie2);
+			third.a = delenie1;
+			third.b = delenie2;
 		}
-		else
-		{
-			result = "Знаминатель равен 0";
-		}
-		return result;
+		return third;
 	}
 
-	public string sravnenie(ComplexNum first, ComplexNum second)
+	public string Comparison(ComplexNum first, ComplexNum second)
 	{
 		string result = "";
 		double vect1 = Math.Sqrt(first.a * first.a + first.b * first.b);
