@@ -20,12 +20,7 @@ public class ComplexNum
     }
 	public bool Equals(ComplexNum first)
 	{
-		bool eq = false;
-		if (first.a == this.a && first.b == this.b)
-		{
-			eq = true;
-		}
-		return eq;
+		return first.a == this.a && first.b == this.b;
 	}
 
 	public override string ToString()
@@ -87,8 +82,8 @@ public class ComplexNum
 		{
 			double delenie1 = (first.a * second.a + first.b * second.b) / (second.a * second.a + second.b * second.b);
 			double delenie2 = (first.b * second.a - first.a * second.b) / (second.a * second.a + second.b * second.b);
-			third.a = delenie1;
-			third.b = delenie2;
+			third.a = Math.Round(delenie1,5);
+			third.b = Math.Round(delenie2, 5);
 		}
 		return third;
 	}
