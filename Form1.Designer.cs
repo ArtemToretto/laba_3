@@ -140,6 +140,7 @@ namespace laba_3
             this.result.ReadOnly = true;
             this.result.Size = new System.Drawing.Size(174, 20);
             this.result.TabIndex = 10;
+            this.result.TextChanged += new System.EventHandler(this.result_TextChanged);
             // 
             // label7
             // 

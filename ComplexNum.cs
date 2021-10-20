@@ -9,8 +9,26 @@ public class ComplexNum
 		this.a = a;
 		this.b = b;
 	}
+    public override bool Equals(object obj)
+    {
+		bool eq = false;
+		if (obj is ComplexNum)
+		{
+			eq = this.Equals(obj as ComplexNum);
+		}
+		return eq;
+    }
+	public bool Equals(ComplexNum first)
+	{
+		bool eq = false;
+		if (first.a == this.a && first.b == this.b)
+		{
+			eq = true;
+		}
+		return eq;
+	}
 
-    public override string ToString()
+	public override string ToString()
     {
 		return this.getResult(a, b);
     }

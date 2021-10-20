@@ -118,5 +118,10 @@ namespace laba_3
         {
             Calculate();
         }
+
+        private void result_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
